@@ -2,11 +2,11 @@
 
 ```
 
-	minikube start --driver=docker
+minikube start --driver=docker
 
-	kubectl create namespace monitoring
+kubectl create namespace monitoring
 
-	kubectl apply -f Manifest/
+kubectl apply -f Manifest/
 
 ```
 
