@@ -10,7 +10,6 @@ kubectl apply -f Manifest/
 
 ### Or run whichever deployments you don't already have: 
 
-***
 
   
 
