@@ -1,23 +1,21 @@
 Clone repo & cd into it, then run:
-***
 ```
 minikube start --driver=docker
 kubectl create namespace monitoring
 kubectl apply -f Manifest/
 ```
 ***
-
----- OR ----
+---- Or run whichever deployments you don't already have: ----
 ***
 
   Prometheus Deployment:
-  ***
+  ```
     kubectl create -f prometheus-clusterRole.yaml
     kubectl create -f prometheus-config-map.yaml
     kubectl create -f prometheus-deployment.yaml
     kubectl create -f prometheus-service.yaml --namespace=monitoring
     kubectl get deployments --namespace=monitoring
-  ***
+  ```
   Kube State Metrics:
   ***
     kubectl create -f ksm-cluster-role.yaml
