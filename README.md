@@ -59,13 +59,14 @@ Forward ports to view application:
   kubectl port-forward <prometheus-pod-name> --namespace=<namespace-prometheus-is-in> 9090:9090
   ```
 ***
-For Example:
+Grafana Example:
   ```
   kubectl port-forward grafana-5f9587668c-9tkjw --namespace=monitoring 3000:3000
   ```
   Then navigate to localhost:3000 to view grafana (username and password should both be 'admin'), if you hover over the '+' icon, you should see the option to 'import'. Click on import and enter 3119 as the dashboard to import, this should give you a variety of charts, some of which are working with this current set up.
 
 ***
+Prometheus Example:
   ```
   kubectl port-forward prometheus-deployment-84f65c89c5-lmxl4 --namespace=monitoring 9090:9090
   ```
