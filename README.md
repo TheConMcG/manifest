@@ -16,7 +16,6 @@ kubectl apply -f Manifest/
     kubectl create -f prometheus-service.yaml --namespace=monitoring
     kubectl get deployments --namespace=monitoring
   ```
-***
   Kube State Metrics:
   ```
     kubectl create -f ksm-cluster-role.yaml
@@ -25,20 +24,17 @@ kubectl apply -f Manifest/
     kubectl create -f ksm-service-account.yaml
     kubectl create -f ksm-service.yaml
   ```
-***
   Grafana Deployment:
   ```
     kubectl create -f grafana-datasource-config.yaml
     kubectl create -f grafana-deployment.yaml
     kubectl create -f grafana-service.yaml
   ```
-***
   Node Exporter:
   ```
     kubectl create -f node-exporter-daemonset.yaml
     kubectl create -f node-exporter-service.yaml
   ```
-***
   Kompass:
   ```
     kubectl create -f kompass-depl.yaml
