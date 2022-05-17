@@ -69,12 +69,12 @@ kubectl get pod --namespace=monitoring
 ***
 
 ### Forward ports to view application:
-Open a new tab in your console with command+'t' and forward your grafana port:
+Open a new tab in your terminal with command+'t' and forward your grafana port:
 ```
 kubectl port-forward <grafana-pod-name> --namespace=<namespace-grafana-is-in> 3000:3000
 ```
 
-Open a new tab in your console with command+'t' and forward your prometheus port:
+Open a new tab in your terminal with command+'t' and forward your prometheus port:
 ```
 kubectl port-forward <prometheus-pod-name> --namespace=<namespace-prometheus-is-in> 9090:9090
 ```
