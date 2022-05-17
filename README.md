@@ -1,8 +1,13 @@
 clone this repo and cd into it
-
+```
 minikube start --driver=docker
+```
+```
 kubectl create namespace monitoring
+```
+```
 kubectl apply -f Manifest/
+```
 
 
 ---- OR ----
